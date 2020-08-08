@@ -7,7 +7,7 @@ bool checkBalanced(const string &s) {
     stack<char> st;
 
     // Maps closing brackets to opening brackets (Just to make code clean, otherwise there will be more if else conditions)
-    map<char, char> mp = {{')','('}, {']', '['}, {'}', '{'}};
+    map<char, char> mp = { {')','('}, {']', '['}, {'}', '{'} };
 
     for(char c: s) {
         // Opening bracket
