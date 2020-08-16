@@ -18,7 +18,7 @@ bool checkBalanced(const string &s) {
         // Closing bracket
         else {
             // Check if top of stack matches(opening bracket) matches with current closing bracket
-            if(st.top() != mp[c]) {
+            if(st.empty() || st.top() != mp[c]) {
                 isBalanced = false;
                 break;
             }
